@@ -41,17 +41,18 @@ header nav ul {
 header nav ul li {
     text-align: center;
     padding: 0.5em 0;
-    width: 100%; /
+    width: 100%; 
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
     display: block;
+    transition: background-color 0.3s ease; 
 }
 
-header nav ul li:hover {
-    background-color: #6d6871; /
+header nav ul li:hover a {
+    background-color: #6d6871; 
 }
 
 .hamburger {
@@ -64,7 +65,6 @@ header nav ul li:hover {
     position: relative;
     z-index: 2; 
 }
-
 
 main {
     padding: 1em;

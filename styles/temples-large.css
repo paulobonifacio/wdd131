@@ -1,0 +1,45 @@
+header {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header nav ul {
+    display: flex; 
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    background: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    padding: 0;
+}
+
+.hamburger {
+    display: none; 
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery figure {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+}

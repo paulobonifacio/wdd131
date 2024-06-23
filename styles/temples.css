@@ -21,12 +21,6 @@ header {
     position: relative;
 }
 
-@media screen and (max-width: 767px) {
-    .hamburger {
-        margin-left: auto; /
-    }
-}
-
 header h1 {
     font-size: 1.5em;
 }
@@ -56,11 +50,6 @@ header nav ul li a {
     display: block;
 }
 
-header nav ul li a:hover,
-header nav ul li a:focus {
-    background-color: #6d6871; 
-}
-
 header nav ul li:hover {
     background-color: #6d6871; 
 }
@@ -76,6 +65,7 @@ header nav ul li:hover {
     z-index: 2; 
 }
 
+
 main {
     padding: 1em;
     text-align: center;
@@ -84,7 +74,6 @@ main {
 .gallery {
     display: grid;
     gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
 }
 
 .gallery figure {
@@ -94,7 +83,6 @@ main {
 .gallery img {
     max-width: 100%;
     height: auto;
-    object-fit: cover; 
 }
 
 footer {
@@ -106,4 +94,10 @@ footer {
 
 header nav ul.active {
     display: flex;
+}
+
+header nav ul li a:hover,
+header nav ul li a:focus {
+    background-color: #6d6871; 
+    color: white;
 }

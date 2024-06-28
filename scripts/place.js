@@ -8,8 +8,8 @@ const lastModifiedParagraph = document.getElementById('lastModified');
 const lastModified = document.lastModified;
 lastModifiedParagraph.textContent = `Last Modified: ${lastModified}`;
 
-const temperature = 74
-const windSpeed = 14
+const temperature = 78
+const windSpeed = 2
 
 function calculateWindChill(temperature, windSpeed) {
     if (temperature <= 50 && windSpeed > 3) {

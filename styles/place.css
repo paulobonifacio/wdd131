@@ -44,7 +44,7 @@ img {
 
 .hero img {
     width: 100vw;
-    height: calc(100vh - 135px); /* 100% da altura da viewport menos a altura do cabeçalho e da linha amarela */
+    height: calc(100vh - 135px); 
     object-fit: cover;
 }
 

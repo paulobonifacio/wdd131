@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WDD 131 - San Francisco Places Page - Paulo Bonifacio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Country - Place Page">
+    <meta name="author" content="Paulo Bonifacio">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <h1>Geneva</h1>
+    </header>
+    <div class="yellow-line"></div>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/geneva.webp" media="(min-width: 900px)">
+                <img src="images/Fortaleza.webp" alt="Geneva - Lake Leman" width="900">
+            </picture>
+        </div>
+        <section id="data">
+            <h2>Data</h2>
+            <table id="data-table">
+                <tr>
+                    <td class="name">Area: </td>
+                    <td>15.92 km2</td>
+                </tr>
+                <tr>
+                    <td class="name">Population: </td>
+                    <td>210,741</td>
+                </tr>
+                <tr>
+                    <td class="name">Landmark: </td>
+                    <td>Jet d'Eau</td>
+                </tr>
+                <tr>
+                    <td class="name">Currency: </td>
+                    <td>Suisse Franc</td>
+                </tr>
+                <tr>
+                    <td class="name">Time Zone: </td>
+                    <td>UTC+01:00 (CET)</td>
+                </tr>
+                <tr>
+                    <td class="name">Home State: </td>
+                    <td>Geneva</td>
+                </tr>
+            </table>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <img src="images/weathericon.svg" alt="Sun for weather Icon">
+            <table id="weather-table">
+                <tr>
+                    <td class="name">Temperature: </td>
+                    <td id="temp-value">74°F</td>
+                </tr>
+                <tr>
+                    <td class="name">Conditions: </td>
+                    <td>Sunny</td>
+                </tr>
+                <tr>
+                    <td class="name">Wind: </td>
+                    <td id="wind-speed">14 mph</td>
+                </tr>
+                <tr>
+                    <td class="name">Wind Chill: </td>
+                    <td id="windchill-factor"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Paulo Bonifacio • Geneva</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

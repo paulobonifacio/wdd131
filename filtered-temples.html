@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temples</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Enhanced Temple Picture Album">
+    <meta name="author" content="Paulo Bonifacio">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script defer src="scripts/filtered-temples.js"></script>
+	<script defer src="scripts/temples.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <ul>
+                <li><a href="#" data-filter="home">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+    </header>
+    <main>
+        <h2>Temples</h2>
+        <section class="gallery" id="templeGallery">
+            <!-- Temple cards will be dynamically inserted here -->			
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Paulo Bonifacio - Switzerland</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

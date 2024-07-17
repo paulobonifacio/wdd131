@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px;
+    padding-top: 80px; /* Para evitar sobreposição do menu fixo */
+}
+
+h1, h2 {
+    font-family: Georgia, serif;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.home .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.home .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.container {
+    border: 1px solid #000;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.image, .text {
+    border: 1px solid #000;
+    padding: 20px;
+    width: 45%;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+}
+
+/* Media Queries para dispositivos menores */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section {
+        margin: 10px;
+        padding-top: 60px; /* Ajuste para evitar sobreposição do menu fixo em telas menores */
+    }
+
+    .item {
+        flex-direction: column;
+    }
+
+    .image, .text {
+        width: 100%;
+        margin: 10px 0; /* Adiciona espaçamento entre imagem e texto */
+    }
+
+    .home {
+        flex-direction: column;
+        height: auto; /* Ajusta a altura para conteúdo dinâmico */
+    }
+
+    .home .background-image {
+        height: 50vh; /* Define a altura da imagem em metade da tela */
+    }
+
+    .home .overlay {
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
